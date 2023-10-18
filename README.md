@@ -1,0 +1,1 @@
+# Bot-ghost-status-remover-by-RTX
