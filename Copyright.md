@@ -1,18 +1,11 @@
-# Discord Bot Status Changer [RTX GAMING]
+## ©RTX GAMING @2023
+All rights reserved.
 
-This Discord bot status changer is a simple JavaScript application that allows you to change your bot's presence status on Discord. You can customize your bot's status to display a specific message or show that it is playing a particular game.
+The code, and content of this application are protected by international copyright laws. Unauthorized reproduction or distribution of this application or any portion of it may result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under the law.
 
-## Usage
+RTX GAMING retains all rights, including but not limited to the right to use, copy, distribute, and make derivative works of this application.
 
-1. Clone or download this repository to your local machine or fork it.
-
-2. Install the required dependencies using npm or yarn:
-
-   ```shell
-   npm install
-   ```
-3. Add your token in secrets
-
+For inquiries about licensing, please contact [RTX#2419].
 
 /**
  ██████╗░████████╗██╗░░██╗           
