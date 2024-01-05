@@ -5,7 +5,7 @@
  ██╔══██╗░░░██║░░░░██╔██╗░          
  ██║░░██║░░░██║░░░██╔╝╚██╗          
  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
-
+  GIT : https://github.com/RTX-GAMINGG/Bot-ghost-status-remover-by-RTX
   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
  * **********************************************
@@ -31,11 +31,13 @@ app.get('/', (req, res) => {
   const imagePath = path.join(__dirname, 'index.html');
   res.sendFile(imagePath);
 });
-app.listen(port, () => console.log('\x1b[36m%s\x1b[0m', `|    🔗 Listening to RTX : ${port}`));
+app.listen(port, () => {
+  console.log(`🔗 Listening to RTX: http://localhost:${port}`);
+  console.log(`🔗 Replit URL: https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`);
+});
 
 
-// ADD YOUR STATUS HERE 
-const statusMessages = ["Coded by RTX GAMING⚠️"];
+const statusMessages = ["👑 I am RTX","LIKE👍","SHARE✨","SUBSCRIBE❤️","THANKS 🌇"];
 
 
 let currentIndex = 0;
@@ -45,7 +47,6 @@ async function login() {
   try {
     await client.login(process.env.TOKEN);
     console.log(`\x1b[36m%s\x1b[0m`, `|    🐇 Logged in as ${client.user.tag}`);
-    console.log(`\x1b[36m%s\x1b[0m`, `|    😏 I AM SORRY BOT GHOST DEVS`);
   } catch (error) {
     console.error('Failed to log in:', error);
     process.exit(1);
@@ -59,7 +60,7 @@ async function login() {
  ██╔══██╗░░░██║░░░░██╔██╗░          
  ██║░░██║░░░██║░░░██╔╝╚██╗          
  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
-
+GIT : https://github.com/RTX-GAMINGG/Bot-ghost-status-remover-by-RTX
   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
  * **********************************************
@@ -92,11 +93,13 @@ function updateStatusAndSendMessages() {
 
 client.once('ready', () => {
   console.log(`\x1b[36m%s\x1b[0m`, `|    ✅ Bot is ready as ${client.user.tag}`);
+  console.log(`\x1b[36m%s\x1b[0m`, `|    ✨HAPPY NEW YEAR MY DEAR FAMILY`);
+  console.log(`\x1b[36m%s\x1b[0m`, `|    ❤️WELCOME TO 2024`);
   updateStatusAndSendMessages();
 
   setInterval(() => {
     updateStatusAndSendMessages();
-  }, 1000);
+  }, 5000);
 });
 
 login();
@@ -108,7 +111,7 @@ login();
  ██╔══██╗░░░██║░░░░██╔██╗░          
  ██║░░██║░░░██║░░░██╔╝╚██╗          
  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
-
+GIT : https://github.com/RTX-GAMINGG/Bot-ghost-status-remover-by-RTX
   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
  * **********************************************
