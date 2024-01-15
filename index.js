@@ -28,12 +28,11 @@ const client = new Client({
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  const imagePath = path.join(__dirname, 'index.html');
-  res.sendFile(imagePath);
+  res.send('I am alive');
 });
 app.listen(port, () => {
   console.log(`🔗 Listening to RTX: http://localhost:${port}`);
-  console.log(`🔗 Replit URL: https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`);
+  console.log(`🔗 Powered By RTX`);
 });
 
 
