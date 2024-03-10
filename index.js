@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Jugando Mxrp","Policia Municipal","Richy Se la come"];
+const statusMessages = ["Jugando Mxrp","Policia Municipal v2","Lolo Se la come"];
 
 
 let currentIndex = 0;
