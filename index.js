@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Playing Buy milk simulator"];
+const statusMessages = ["W grze Symulator kupowania mleka"];
 
 
 let currentIndex = 0;
