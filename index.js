@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Listening to .gg/hiraishi"];
+const statusMessages = ["Listening to Mommy ASMR"];
 
 
 let currentIndex = 0;
