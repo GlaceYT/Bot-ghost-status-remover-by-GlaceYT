@@ -15,7 +15,6 @@
 
 # code License Agreement
 
-**Effective Date:** 19/10/2023
 
 **Between:**
 [RTX GAMING]
