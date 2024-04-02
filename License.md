@@ -6,7 +6,7 @@
  ██║░░██║░░░██║░░░██╔╝╚██╗          
  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
 
-  DISCORD SERVER : https://discord.gg/FUEHs7RCqz
+  DISCORD SERVER : https://discord.com/invite/xQF9f9yUEM
   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
  * **********************************************
  *   Code by RTX GAMING
@@ -67,7 +67,7 @@ If you have any questions or need to contact Licensor, please reach out to [RTX#
  ██║░░██║░░░██║░░░██╔╝╚██╗          
  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
 
-  DISCORD SERVER : https://discord.gg/FUEHs7RCqz
+  DISCORD SERVER : https://discord.com/invite/xQF9f9yUEM
   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
  * **********************************************
  *   Code by RTX GAMING
