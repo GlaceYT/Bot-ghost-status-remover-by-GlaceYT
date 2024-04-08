@@ -1,0 +1,56 @@
+# About
+This is an uncomplete YouTube API wrapper made specifically for ease of use when creating a discord music bot. Why is it more convenient? This module always returns a useful `Video` where all properties are guaranteed, so there is
+no real need to make more than one request manually to retrieve something like the duration of the video, also things that aren't really useful for a discord music bot have also been left out such as channel-related information
+and playlist information, playlists are still available but rather than returning a playlist object, the playlist retrieval methods will return arrays of videos. All unsuccessful requests will throw easy to understand errors.
+
+THIS PACKAGE USES ASYNC/AWAIT, download the latest node version.
+
+# Install
+```
+npm install --save discord-youtube-api
+```
+
+# Example
+```js
+const YouTube = require("discord-youtube-api");
+
+const youtube = new YouTube("google api key");
+
+async function testAll() {
+	const video1 = await youtube.getVideo("https://www.youtube.com/watch?v=5NPBIwQyPWE");
+	const video2 = await youtube.getVideoByID("5NPBIwQyPWE");
+	const video3 = await youtube.searchVideos("big poppa biggie smalls");
+	const videoArray1 = await youtube.getPlaylist("https://www.youtube.com/playlist?list=PLxyf3paml4dNMlJURcEOND0StDN1Q4yWz");
+	const videoArray2 = await youtube.getPlaylistByID("PLxyf3paml4dNMlJURcEOND0StDN1Q4yWz");
+
+	console.log(video1, video2, video3, videoArray1, videoArray2);
+}
+
+/*
+Example video object:
+
+Video {
+    title: 'Dr. Dre - I Need A Doctor (Explicit) ft. Eminem, Skylar Grey',
+    id: 'VA770wpLX-Q',
+    description: 'Get COMPTON the NEW ALBUM from Dr. Dre on Apple Music: http://smarturl.it/Compton \n\nMusic
+	video by Dr. Dre performing I Need A Doctor featuring Eminem and Skylar Grey (Explicit). © 2011 Aftermath
+	 Records\n#VEVOCERTIFIED on Aug. 17, 2012. http://www.youtube.com/vevocertified',
+    duration:
+     { weeks: 0,
+       years: 0,
+       months: 0,
+       days: 0,
+       hours: 0,
+       minutes: 7,
+       seconds: 37 },
+    durationSeconds: 457 },
+
+as well as a few getters:
+
+video.length
+video.thumbnail
+video.url
+
+video.length is the duration formatted as HH:MM:SS
+*/
+

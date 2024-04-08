@@ -1,0 +1,19 @@
+{
+  "name": "youtube-api-search",
+  "version": "0.0.5",
+  "description": "Search for youtube videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youtube",
+    "search",
+    "api"
+  ],
+  "author": "Stephen Grider",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.7.0"
+  }
+}

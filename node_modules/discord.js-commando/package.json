@@ -1,0 +1,43 @@
+{
+	"name": "discord.js-commando",
+	"version": "0.12.3",
+	"description": "The official command framework for Discord.js",
+	"license": "Apache-2.0",
+	"author": "Schuyler Cebulskie <Gawdl3y@gawdl3y.com> (https://gawdl3y.com/)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/discordjs/Commando.git"
+	},
+	"bugs": {
+		"url": "https://github.com/discordjs/Commando/issues"
+	},
+	"keywords": [
+		"discord",
+		"bot",
+		"commands"
+	],
+	"scripts": {
+		"test": "yarn run lint && yarn run docs:test",
+		"lint": "eslint src",
+		"lint:fix": "eslint --fix src",
+		"docs": "docgen --source src --custom docs/index.yml --output docs/docs.json",
+		"docs:test": "docgen --source src --custom docs/index.yml"
+	},
+	"main": "src/index",
+	"types": "./typings/index.d.ts",
+	"dependencies": {
+		"common-tags": "^1.8.0",
+		"emoji-regex": "^9.2.0",
+		"is-promise": "^4.0.0",
+		"require-all": "^3.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^12.7.3",
+		"discord.js-docgen": "discordjs/docgen",
+		"eslint": "^6.3.0",
+		"typescript": "^3.6.2"
+	},
+	"engines": {
+		"node": ">=12.0.0"
+	}
+}
