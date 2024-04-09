@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Listening to Spotify","Watching YouTube"];
+const statusMessages = ["השרת הכי טוב: 𝕧𝕚𝕓𝕖 & 𝕔𝕙𝕚𝕝𝕝","המנהלת היא דנה", "כל הזכויות שמורות לדנה" ];
 
 
 let currentIndex = 0;
@@ -74,7 +74,7 @@ function updateStatusAndSendMessages() {
 
   client.user.setPresence({
     activities: [{ name: currentStatus, type: ActivityType.Custom}],
-    status: 'dnd',
+    status: 'online',
   });
 
   
