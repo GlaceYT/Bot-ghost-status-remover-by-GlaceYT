@@ -1,3 +1,5 @@
+
+
 /**
  ██████╗░████████╗██╗░░██╗           
  ██╔══██╗╚══██╔══╝╚██╗██╔╝          
@@ -36,7 +38,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Sizi İzliyor...","Sunucuyu Yönetiyor..."];
+const statusMessages = ["Partner Yapıyor...","Sizi İzliyor...","Açıklamamı Oku İstersen....","Anime Kızları Gerçek!"];
 
 
 let currentIndex = 0;
