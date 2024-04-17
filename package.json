@@ -1,7 +1,7 @@
 {
-  "name": "👑 BOT GHOST STATUS REMOVER RTX \n",
+  "name": "👑 BOT GHOST STATUS REMOVER GlaceYT\n",
   "version": "Latest Version : ",
-  "description": "There will be more updates For this BOT",
+  "description": "Status Changer",
   "main": "index.js",
   "dependencies": {
     "@discordjs/opus": "^0.9.0",
