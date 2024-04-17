@@ -7,6 +7,8 @@ GlaceYT retains all rights, including but not limited to the right to use, copy,
 
 For inquiries about licensing, please contact [RTX#2419].
 
+/*
+
   ________.__                        _____.___.___________
  /  _____/|  | _____    ____  ____   \__  |   |\__    ___/
 /   \  ___|  | \__  \ _/ ___\/ __ \   /   |   |  |    |   
@@ -22,3 +24,6 @@ For inquiries about licensing, please contact [RTX#2419].
 ║  ## YouTube : https://www.youtube.com/@GlaceYt                         ║
 ║                                                                        ║
 ╚════════════════════════════════════════════════════════════════════════╝
+
+
+*/
