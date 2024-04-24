@@ -38,7 +38,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Partner Yapıyor...","Sizi İzliyor...","Açıklamamı Oku İstersen....","Anime Kızları Gerçek!"];
+const statusMessages = ["Flawless 1.8k Yetkili Alım","Sizi İzliyor...","Made By Blacker_kz ","Anime Kızları Gerçek!","Ne Bakıyon Hacı?","sanma artık sana yol gözlerim","Aklımda son sözlerin","Yapay Zeka Özelliğim Varmı Evet Var :)","Kuru Kuru Kururinnn","Supraggggg"];
 
 
 let currentIndex = 0;
