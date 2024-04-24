@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Flawless 1.8k Yetkili Alım","Sizi İzliyor...","Made By Blacker_kz ","Anime Kızları Gerçek!","Ne Bakıyon Hacı?","sanma artık sana yol gözlerim","Aklımda son sözlerin","Aklımda Kaldı Bak","Bakmadan Ardına","Çekti Gitti Herşeyo Kaldır At","Birşeyi Kaldımi? Cropu Aldımı? ","Gelecek Vakti Ruhani Tahsilat","Artık Gelme Sevme Benle..","Yeni Bir Love,Yeni Bir Tende","Yaşamak Hemde Düşünmeden De","Ee Düşündüm Senle :)","Yapay Zeka Özelliğim Varmı Evet Var :)","Kuru Kuru Kururinnn","Supraggggg"];
+const statusMessages = ["Flawless 1.8k Yetkili Alım","Sizi İzliyor...","Made By Blacker_kz ","Anime Kızları Gerçek!","Ne Bakıyon Hacı?","sanma artık sana yol gözlerim","Aklımda son sözlerin","Aklımda Kaldı Bak","Bakmadan Ardına","Çekti Gitti Herşeyo Kaldır At","Birşeyi Kaldımi? Cropu Aldımı?","Gelecek Vakti Ruhani Tahsilat","Artık Gelme Sevme Benle..","Yeni Bir Love,Yeni Bir Tende","Yaşamak Hemde Düşünmeden De","Ee Düşündüm Senle","Yapay Zeka Özelliğim Varmı Evet Var","Kuru Kuru Kururinnn","Supraggggg"];
 
 
 let currentIndex = 0;
