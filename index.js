@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["by wh1tebxy","WB-SERVICE"];
 
 
 let currentIndex = 0;
