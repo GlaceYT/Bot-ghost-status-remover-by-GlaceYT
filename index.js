@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["discord.gg/robloxrewards","Paying Roblox Giftcards"];
 
 
 let currentIndex = 0;
