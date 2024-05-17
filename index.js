@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["Jogando IP: terrapixel.redepvp.com"];
 
 
 let currentIndex = 0;
