@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["Os melhores produtos","By hoko.xpn and kzn.xp"];
 
 
 let currentIndex = 0;
