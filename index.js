@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["ASB:RED","ASB:FTD"];
 
 
 let currentIndex = 0;
