@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["⚡ FLUXO ROLEPLAY ⚡","MADE BY JH1369"];
 
 
 let currentIndex = 0;
