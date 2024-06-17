@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["This Bot Was Made By #drax6753"];
 
 
 let currentIndex = 0;
