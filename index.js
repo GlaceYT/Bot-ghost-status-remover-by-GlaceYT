@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["Made By JH1369","JH™ Official Bot"];
 
 
 let currentIndex = 0;
