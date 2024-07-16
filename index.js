@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["Lemon // Youtube","Kanala Abone OL"];
 
 
 let currentIndex = 0;
