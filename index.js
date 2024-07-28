@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Playing SouthWest Florida Roleplay"];
+const statusMessages = ["The Official $FCP Bot"];
 
 
 let currentIndex = 0;
