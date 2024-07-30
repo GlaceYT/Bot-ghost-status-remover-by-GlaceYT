@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["The Certified SSM Bot"];
+const statusMessages = ["-- $$M --"];
 
 
 let currentIndex = 0;
