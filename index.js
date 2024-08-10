@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Created By U3"];
+const statusMessages = [""];
 
 
 let currentIndex = 0;
