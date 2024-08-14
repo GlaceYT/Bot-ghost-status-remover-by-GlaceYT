@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["İnsanlardan Nefret Ediyorum","Sizi İzliyorum?","Sizinle Uğraşıyoum!","Kuru Kuru Kururin!","Hey Dikkatli Ol Gözüm Üzerinde! ","Ne Bakıyon Rias var?"];
+const statusMessages = ["İnsanlardan Nefret Ediyorum","Sizi İzliyorum?","Sizinle Uğraşıyoum!","Kuru Kuru Kururin!","Hey Dikkatli Ol Gözüm Üzerinde! ","Ne Bakıyon Rias var?","Tatlış Bir Partner Botuyum!!"];
 
 
 let currentIndex = 0;
