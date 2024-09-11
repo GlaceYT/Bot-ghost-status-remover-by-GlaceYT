@@ -39,10 +39,7 @@
 </p>
 
 
-
-# Discord All-in-One BOT Installation Guide
-
-## How to Install
+## Guide
 
 ###  Set Up Hosting Service
 
