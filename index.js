@@ -38,7 +38,9 @@ app.listen(port, () => {
 });
 
 const statusMessages = ["🎧 Listening to Spotify", "🎮 Playing VALORANT"];
-let currentIndex = 0;
+const statusTypes = [ 'dnd', 'idle'];
+let currentStatusIndex = 0;
+let currentTypeIndex = 0;
 
 async function login() {
   try {
@@ -53,13 +55,15 @@ async function login() {
 }
 
 function updateStatus() {
-  const currentStatus = statusMessages[currentIndex];
+  const currentStatus = statusMessages[currentStatusIndex];
+  const currentType = statusTypes[currentTypeIndex];
   client.user.setPresence({
     activities: [{ name: currentStatus, type: ActivityType.Custom }],
-    status: 'online',
+    status: currentType,
   });
-  console.log('\x1b[33m[ STATUS ]\x1b[0m', `Updated status to: ${currentStatus}`);
-  currentIndex = (currentIndex + 1) % statusMessages.length;
+  console.log('\x1b[33m[ STATUS ]\x1b[0m', `Updated status to: ${currentStatus} (${currentType})`);
+  currentStatusIndex = (currentStatusIndex + 1) % statusMessages.length;
+  currentTypeIndex = (currentTypeIndex + 1) % statusTypes.length;
 }
 
 function heartbeat() {
