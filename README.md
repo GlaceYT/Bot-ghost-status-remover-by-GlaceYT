@@ -1,7 +1,7 @@
 ![Animated Background](https://i.imgur.com/ECZKmlO.gif)
 
 <h1 align="center" style="font-family: Arial, sans-serif; color: #FF6F61; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
-  ALL IN ONE BOT
+  BOT GHOST STATUS REMOVER
 </h1>
 
 <p align="center">
