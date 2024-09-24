@@ -37,7 +37,7 @@ app.listen(port, () => {
   console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
 });
 
-const statusMessages = ["EDIT THE STATUS", "🎮 Playing VALORANT"];
+const statusMessages = ["EDIT THE STATUS", "🎮 Pοπ παο τον παιζει στο κρεαβατι με deafen"];
 let currentIndex = 0;
 
 async function login() {
