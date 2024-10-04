@@ -19,7 +19,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["TR Project"];
+const statusMessages = ["Made Digitally"];
 
 
 let currentIndex = 0;
