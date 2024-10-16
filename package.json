@@ -1,5 +1,5 @@
 {
-  "name": "Bot Ghost Status Remover",
+  "name": "bot-ghost-status-remover",
   "version": "3.0.0",
   "description": "dynamic status and heartbeat",
   "main": "index.js",
