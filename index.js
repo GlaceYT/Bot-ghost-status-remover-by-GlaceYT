@@ -9,13 +9,6 @@
 /_______  /\___|_  /|___|  \___/\____|__  / 
         \/       \/                     \/  
                     
-DISCORD :  https://discord.com/invite/xQF9f9yUEM                   
-YouTube : https://www.youtube.com/@GlaceYT                         
-                                                                       
-☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
-
-
-*/
 const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
 require('dotenv').config();
 const express = require('express');
@@ -23,7 +16,8 @@ const path = require('path');
 
 const client = new Client({
   intents: [
-    GatewayIntentBits.Guilds
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMembers // דרוש כדי להביא את כמות הממברים בשרת
   ],
 });
 
@@ -37,45 +31,51 @@ app.listen(port, () => {
   console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
 });
 
-const statusMessages = ["🎧 Listening to Spotify", "🎮 Playing VALORANT"];
-const statusTypes = [ 'dnd', 'idle'];
+const statusMessages = ["My owner+ dev: dana2 👩‍💻 ", "Vibe & chill the best 😃"];
+const statusTypes = ['dnd', 'idle'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
 
 async function login() {
   try {
     await client.login(process.env.TOKEN);
-    console.log('\x1b[36m[ LOGIN ]\x1b[0m', `\x1b[32mLogged in as: ${client.user.tag} ✅\x1b[0m`);
-    console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[35mBot ID: ${client.user.id} \x1b[0m`);
-    console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[34mConnected to ${client.guilds.cache.size} server(s) \x1b[0m`);
+    console.log('\x1b[36m[ LOGIN ]\x1b[0m', `\x1b[32mמחובר כ: ${client.user.tag} ✅\x1b[0m`);
+    console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[35mמזהה הבוט: ${client.user.id} \x1b[0m`);
+    console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[34mמחובר ל-${client.guilds.cache.size} שרת(ים) \x1b[0m`);
+
+    // מציג את כמות הממברים בכל שרת שהבוט מחובר אליו
+    client.guilds.cache.forEach(guild => {
+      console.log('\x1b[36m[ SERVER INFO ]\x1b[0m', `\x1b[32mשרת: ${guild.name} | כמות ממברים: ${guild.memberCount} \x1b[0m`);
+    });
+
   } catch (error) {
-    console.error('\x1b[31m[ ERROR ]\x1b[0m', 'Failed to log in:', error);
+    console.error('\x1b[31m[ ERROR ]\x1b[0m', 'נכשל להתחבר:', error);
     process.exit(1);
   }
 }
 
 function updateStatus() {
-  const currentStatus = statusMessages[currentStatusIndex];
-  const currentType = statusTypes[currentTypeIndex];
+  // סופר את כמות הממברים מכל השרתים
+  const totalMembers = client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0);
+
+  // יוצר סטטוס עם כמות הממברים
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Custom }],
-    status: currentType,
+    activities: [{ name: `${totalMembers} members | !help`, type: ActivityType.Watching }],
+    status: 'online',
   });
-  console.log('\x1b[33m[ STATUS ]\x1b[0m', `Updated status to: ${currentStatus} (${currentType})`);
-  currentStatusIndex = (currentStatusIndex + 1) % statusMessages.length;
-  currentTypeIndex = (currentTypeIndex + 1) % statusTypes.length;
+  console.log('\x1b[33m[ STATUS ]\x1b[0m', `סטטוס עודכן ל: ${totalMembers} members | !help (Watching)`);
 }
 
 function heartbeat() {
   setInterval(() => {
-    console.log('\x1b[35m[ HEARTBEAT ]\x1b[0m', `Bot is alive at ${new Date().toLocaleTimeString()}`);
+    console.log('\x1b[35m[ HEARTBEAT ]\x1b[0m', `הבוט פעיל בשעה ${new Date().toLocaleTimeString()}`);
   }, 30000);
 }
 
 client.once('ready', () => {
-  console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[34mPing: ${client.ws.ping} ms \x1b[0m`);
+  console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[34mפינג: ${client.ws.ping} מילישניות \x1b[0m`);
   updateStatus();
-  setInterval(updateStatus, 10000);
+  setInterval(updateStatus, 10000); // עדכון הסטטוס כל 10 שניות
   heartbeat();
 });
 
