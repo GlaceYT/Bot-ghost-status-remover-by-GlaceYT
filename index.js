@@ -37,7 +37,7 @@ app.listen(port, () => {
   console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
 });
 
-const statusMessages = ["🤖 Hosted By Rhys!", "Hosted @ Rhys' Customs"];
+const statusMessages = ["✈️ Looking at the sky!", "Watching Over Tui Virtual"];
 const statusTypes = [ 'online', 'online'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
